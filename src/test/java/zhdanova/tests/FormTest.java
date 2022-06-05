@@ -28,9 +28,7 @@ public class FormTest extends TestBase {
         $("#userEmail").setValue(userEmail);
 
 
-        $("*[for=gender-radio-1]").click();
         $("*[for=gender-radio-2]").click();
-        $("*[for=gender-radio-3]").click();
 //        $("#example").selectRadio("example");
 //        $("#gender-radio-2").parent().click();
 //        $("#genterWrapper").$(byText("Other")).click();
@@ -48,8 +46,6 @@ public class FormTest extends TestBase {
         $("#subjectsInput").pressEnter();
 
         $("*[for=hobbies-checkbox-1]").click();
-        $("*[for=hobbies-checkbox-2]").click();
-        $("*[for=hobbies-checkbox-3]").click();
 
         $("#uploadPicture").uploadFromClasspath("img/Screenshot.png");
 //        $("uploadPicture").uploadFile(new File("src/test/resources/Screenshot.png"));
@@ -66,7 +62,9 @@ public class FormTest extends TestBase {
 
         $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
-        $(".table-responsive").shouldHave(text(firstName),text(lastName),text(userEmail),text(userNumber),text(currentAddress),text("22 July,1992"));
+        $(".table-responsive").shouldHave(text(firstName),text(lastName),text(userEmail),text(userNumber),
+                text(currentAddress),text("22 July,1992"),text("NCR"),text("Gurgaon"),
+                text("Female"),text("Chemistry"),text("Sports"),text("Screenshot.png"));
 //        $("*[title]").shouldHave(attribute("title", "ToolsQA"));
 
     }
