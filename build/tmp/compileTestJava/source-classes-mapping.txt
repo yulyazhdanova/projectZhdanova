@@ -1,7 +1,7 @@
 zhdanova/pages/components/ResultTableComponent.java
  zhdanova.pages.components.ResultTableComponent
-zhdanova/tests/RegistrationFormWithPageObjectsTest.java
- zhdanova.tests.RegistrationFormWithPageObjectsTest
+zhdanova/pages/RegistrationFormPage.java
+ zhdanova.pages.RegistrationFormPage
 zhdanova/pages/components/CalendarComponent.java
  zhdanova.pages.components.CalendarComponent
 zhdanova/tests/RegistrationFormTest.java
@@ -16,5 +16,5 @@ zhdanova/docs/JUnit5Examples.java
  zhdanova.docs.JUnit5Examples
 zhdanova/tests/RegistrationFormCommentsTest.java
  zhdanova.tests.RegistrationFormCommentsTest
-zhdanova/pages/RegistrationFormPage.java
- zhdanova.pages.RegistrationFormPage
+zhdanova/tests/RegistrationFormWithPageObjectsTest.java
+ zhdanova.tests.RegistrationFormWithPageObjectsTest
