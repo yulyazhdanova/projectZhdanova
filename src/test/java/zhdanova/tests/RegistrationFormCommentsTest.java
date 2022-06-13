@@ -6,8 +6,10 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
 
-public class FormTest extends TestBase {
+public class RegistrationFormCommentsTest extends TestBase {
+
 
     @Test
     void successfulTest() {
@@ -29,7 +31,6 @@ public class FormTest extends TestBase {
 
 
         $("*[for=gender-radio-2]").click();
-//        $("#example").selectRadio("example");
 //        $("#gender-radio-2").parent().click();
 //        $("#genterWrapper").$(byText("Other")).click();
 
@@ -62,11 +63,26 @@ public class FormTest extends TestBase {
 
         $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
-        $(".table-responsive").shouldHave(text(firstName),text(lastName),text(userEmail),text(userNumber),
-                text(currentAddress),text("22 July,1992"),text("NCR"),text("Gurgaon"),
-                text("Female"),text("Chemistry"),text("Sports"),text("Screenshot.png"));
-//        $("*[title]").shouldHave(attribute("title", "ToolsQA"));
+        $(".table-responsive").shouldHave(text(firstName), text(lastName),
+                text(userEmail),
+                text(userNumber),
+                text(currentAddress),
+                text("22 July,1992"),
+                text("NCR"),
+                text("Gurgaon"),
+                text("Female"),
+                text("Chemistry"),
+                text("Sports"),
+                text("Screenshot.png"));
+//        $("title").shouldHave(text("title text"));
+
+        checkTable("Date of Birth", "22 July,1992");
 
     }
-}
 
+    void checkTable(String key, String value) {
+        $(".table-responsive").$(byText(key))
+                .parent().shouldHave(text(value));
+    }
+
+}

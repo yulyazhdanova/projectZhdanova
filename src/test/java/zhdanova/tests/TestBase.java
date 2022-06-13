@@ -2,8 +2,12 @@ package zhdanova.tests;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
+import zhdanova.pages.RegistrationFormPage;
 
 public class TestBase {
+
+    RegistrationFormPage registrationFormPage = new RegistrationFormPage();
+
 
     @BeforeAll
     static void beforeAll() {

@@ -59,10 +59,10 @@ public class Main {
     public static void exersise5() {
         int a = 5;
         long b = 8000000000000000L;
-        long c = (a + b);
+        long c = (a + b); // операция над разными типами данных
         long d = (c - b); // типом int d уже не инициализировать
         long e = (d - a);  // типом int е уже не инициализировать
-        System.out.println("c = " + c); // операция над разными типами данных
+        System.out.println("c = " + c);
         System.out.println("d = " + d);
         System.out.println("e = " + e);
     }
