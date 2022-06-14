@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="zhdanova.tests.RegistrationFormWithPageObjectsTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-06-13T11:27:10" hostname="LAPTOP-V6QUG70V" time="11.544">
+<testsuite name="zhdanova.tests.RegistrationFormWithPageObjectsTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-06-14T18:58:49" hostname="LAPTOP-V6QUG70V" time="13.688">
   <properties/>
-  <testcase name="successfulTest()" classname="zhdanova.tests.RegistrationFormWithPageObjectsTest" time="11.544">
-    <failure message="Invalid element state [#stateCity-wrapper]: element not interactable&#13;&#10;Screenshot: file:/C:/Users/Юлия%20Жданова/IdeaProjects/projectZhdanova/build/reports/tests/1655119642233.0.png&#13;&#10;Page source: file:/C:/Users/Юлия%20Жданова/IdeaProjects/projectZhdanova/build/reports/tests/1655119642233.0.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: ElementNotInteractableException: element not interactable" type="com.codeborne.selenide.ex.InvalidStateException">Invalid element state [#stateCity-wrapper]: element not interactable
-Screenshot: file:/C:/Users/Юлия%20Жданова/IdeaProjects/projectZhdanova/build/reports/tests/1655119642233.0.png
-Page source: file:/C:/Users/Юлия%20Жданова/IdeaProjects/projectZhdanova/build/reports/tests/1655119642233.0.html
+  <testcase name="successfulTest()" classname="zhdanova.tests.RegistrationFormWithPageObjectsTest" time="13.688">
+    <failure message="Invalid element state [#city]: element click intercepted: Element &lt;div class=&quot; css-14jk2my-container&quot; id=&quot;city&quot;&gt;...&lt;/div&gt; is not clickable at point (589, 560). Other element would receive the click: &lt;div class=&quot;col-md-4 col-sm-12&quot;&gt;...&lt;/div&gt;&#13;&#10;Screenshot: file:/C:/Users/Юлия%20Жданова/IdeaProjects/projectZhdanova/build/reports/tests/1655233142793.0.png&#13;&#10;Page source: file:/C:/Users/Юлия%20Жданова/IdeaProjects/projectZhdanova/build/reports/tests/1655233142793.0.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot; css-14jk2my-container&quot; id=&quot;city&quot;&gt;...&lt;/div&gt; is not clickable at point (589, 560). Other element would receive the click: &lt;div class=&quot;col-md-4 col-sm-12&quot;&gt;...&lt;/div&gt;" type="com.codeborne.selenide.ex.InvalidStateException">Invalid element state [#city]: element click intercepted: Element &lt;div class=&quot; css-14jk2my-container&quot; id=&quot;city&quot;&gt;...&lt;/div&gt; is not clickable at point (589, 560). Other element would receive the click: &lt;div class=&quot;col-md-4 col-sm-12&quot;&gt;...&lt;/div&gt;
+Screenshot: file:/C:/Users/Юлия%20Жданова/IdeaProjects/projectZhdanova/build/reports/tests/1655233142793.0.png
+Page source: file:/C:/Users/Юлия%20Жданова/IdeaProjects/projectZhdanova/build/reports/tests/1655233142793.0.html
 Timeout: 4 s.
-Caused by: ElementNotInteractableException: element not interactable
+Caused by: ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot; css-14jk2my-container&quot; id=&quot;city&quot;&gt;...&lt;/div&gt; is not clickable at point (589, 560). Other element would receive the click: &lt;div class=&quot;col-md-4 col-sm-12&quot;&gt;...&lt;/div&gt;
 	at com.codeborne.selenide.impl.ExceptionWrapper.wrap(ExceptionWrapper.java:26)
 	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:153)
 	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:83)
-	at com.sun.proxy.$Proxy16.setValue(Unknown Source)
-	at zhdanova.pages.RegistrationFormPage.setState(RegistrationFormPage.java:74)
-	at zhdanova.tests.RegistrationFormWithPageObjectsTest.successfulTest(RegistrationFormWithPageObjectsTest.java:36)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at zhdanova.pages.RegistrationFormPage.setCity(RegistrationFormPage.java:81)
+	at zhdanova.tests.RegistrationFormWithPageObjectsTest.successfulTest(RegistrationFormWithPageObjectsTest.java:31)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -103,15 +103,15 @@ Caused by: ElementNotInteractableException: element not interactable
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.openqa.selenium.ElementNotInteractableException: element not interactable
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot; css-14jk2my-container&quot; id=&quot;city&quot;&gt;...&lt;/div&gt; is not clickable at point (589, 560). Other element would receive the click: &lt;div class=&quot;col-md-4 col-sm-12&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=102.0.5005.115)
 Build info: version: '4.1.4', revision: '535d840ee2'
 System info: host: 'LAPTOP-V6QUG70V', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e8de1ff55ac1b55dbf325c6d534fcfef, sendKeysToElement {id=de8dd647-f51e-4915-a35c-53f423f49e1f, value=[Ljava.lang.CharSequence;@5cf2d7d3}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Юлия Жданова\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:54426}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54426/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (e8de1ff55ac1b55dbf325c6d534fcfef)] -&gt; css selector: #stateCity-wrapper]
-Session ID: e8de1ff55ac1b55dbf325c6d534fcfef
+Command: [2b10949cdd4b955069423bce40e44889, clickElement {id=346cf0a0-cb42-4494-a6d0-8d6d5ef6f4af}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Юлия Жданова\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50491/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (2b10949cdd4b955069423bce40e44889)] -&gt; css selector: #city]
+Session ID: 2b10949cdd4b955069423bce40e44889
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -124,11 +124,11 @@ Session ID: e8de1ff55ac1b55dbf325c6d534fcfef
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
-	at com.codeborne.selenide.commands.Clear.clear(Clear.java:64)
-	at com.codeborne.selenide.commands.SetValue.setValueForTextInput(SetValue.java:69)
-	at com.codeborne.selenide.commands.SetValue.execute(SetValue.java:43)
-	at com.codeborne.selenide.commands.SetValue.execute(SetValue.java:25)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.codeborne.selenide.commands.Click.defaultClick(Click.java:73)
+	at com.codeborne.selenide.commands.Click.click(Click.java:52)
+	at com.codeborne.selenide.commands.Click.execute(Click.java:29)
+	at com.codeborne.selenide.commands.Click.execute(Click.java:19)
 	at com.codeborne.selenide.commands.Commands.execute(Commands.java:155)
 	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:131)
 	... 94 more
@@ -138,15 +138,15 @@ Session ID: e8de1ff55ac1b55dbf325c6d534fcfef
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 65182
+Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 59729
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-июн. 13, 2022 2:27:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+июн. 14, 2022 9:58:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-июн. 13, 2022 2:27:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+июн. 14, 2022 9:58:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 102, so returning the closest version found: 101
-июн. 13, 2022 2:27:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+июн. 14, 2022 9:58:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 102 of 101
 ]]></system-err>
 </testsuite>
