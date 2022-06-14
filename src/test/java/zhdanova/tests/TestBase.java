@@ -12,13 +12,7 @@ public class TestBase {
     @BeforeAll
     static void beforeAll() {
         Configuration.baseUrl = "https://demoqa.com";
-    }
-
-    static void oneMoreBeforeAll() {
         Configuration.browserSize = "1920x1080";
-    }
-
-    static void andOneMoreBeforeAll() {
         Configuration.holdBrowserOpen = true;
     }
 }
