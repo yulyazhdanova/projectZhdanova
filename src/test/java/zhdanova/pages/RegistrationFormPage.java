@@ -63,7 +63,7 @@ public class RegistrationFormPage {
         return this;
     }
 
-    public RegistrationFormPage setGender() {
+    public RegistrationFormPage setGender(String gender) {
         pageGender.click();
         return this;
     }
@@ -84,7 +84,7 @@ public class RegistrationFormPage {
         return this;
     }
 
-    public RegistrationFormPage setHobbies() {
+    public RegistrationFormPage setHobbies(String hobbie) {
         pageHobbies.click();
         return this;
     }

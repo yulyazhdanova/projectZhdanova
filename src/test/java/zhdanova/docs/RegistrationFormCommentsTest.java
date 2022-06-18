@@ -1,7 +1,8 @@
-package zhdanova.tests;
+package zhdanova.docs;
 
 import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.Test;
+import zhdanova.tests.TestBase;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
