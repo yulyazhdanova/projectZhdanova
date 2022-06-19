@@ -17,7 +17,7 @@ public class RegistrationFormPage {
     SubjectInputComponent subjectInputComponent = new SubjectInputComponent();
     ResultTableComponent resultTableComponent = new ResultTableComponent();
 
-    SelenideElement pageCheckText = $(".practice-form-wrapper");
+    SelenideElement pageCheckSummaryOfForm = $(".practice-form-wrapper");
     SelenideElement pageFirstName = $("#firstName");
     SelenideElement pageLastName = $("#lastName");
     SelenideElement pageUserEmail = $("#userEmail");
@@ -32,7 +32,7 @@ public class RegistrationFormPage {
     SelenideElement pageCity = $("#city");
     SelenideElement pageInputCity = $("#react-select-4-input");
     SelenideElement pageSubmit = $("#submit");
-    SelenideElement pageCheckText2 = $("#example-modal-sizes-title-lg");
+    SelenideElement pageCheckSummaryOfFinalForm = $("#example-modal-sizes-title-lg");
 
 
     public RegistrationFormPage openPage() {
@@ -43,8 +43,8 @@ public class RegistrationFormPage {
         return this;
     }
 
-    public RegistrationFormPage checkText() {
-        pageCheckText.shouldHave(text("Student Registration Form"));
+    public RegistrationFormPage checkSummaryOfForm() {
+        pageCheckSummaryOfForm.shouldHave(text("Student Registration Form"));
         return this;
     }
 
@@ -89,8 +89,8 @@ public class RegistrationFormPage {
         return this;
     }
 
-    public RegistrationFormPage setPicture() {
-        pagePicture.uploadFromClasspath("img/Screenshot.png");
+    public RegistrationFormPage setPicture(String value) {
+        pagePicture.uploadFromClasspath(value);
         return this;
     }
 
@@ -116,8 +116,8 @@ public class RegistrationFormPage {
         return this;
     }
 
-    public RegistrationFormPage checkText2() {
-        pageCheckText2.shouldHave(text("Thanks for submitting the form"));
+    public RegistrationFormPage checkSummaryOfFinalForm() {
+        pageCheckSummaryOfFinalForm.shouldHave(text("Thanks for submitting the form"));
         return this;
     }
 
