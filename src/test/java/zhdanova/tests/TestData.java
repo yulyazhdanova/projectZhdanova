@@ -15,7 +15,7 @@ public class TestData {
     final String userEmail = faker.internet().emailAddress();
     final String gender = RandomsForForm.randomGender();
     final String userNumber = getRandomNumber(10);
-    final String dateOfBirth = String.valueOf(faker.number().numberBetween(1,25));
+    final String dateOfBirth = String.valueOf(faker.number().numberBetween(5,25));
     final String monthOfBirth = RandomsForForm.randomMonth();
     final String yearOfBirth = String.valueOf(faker.number().numberBetween(1990,2000));
     final String subject = RandomsForForm.randomSubjects();
